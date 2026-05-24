@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Juliana Carolina Castillo">
+    <meta name="description" content="Sitio web Cobre & Aura, guía visual sobre cabello cobrizo, tonos, tintes y cuidados.">
+    <meta name="keywords" content="cabello cobrizo, tintes cobrizos, cuidado capilar, tonos cobre">
+    <title>Cobre & Aura</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<header>
+    <nav class="navbar">
+        <h1>Cobre & Aura</h1>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#tonos">Tonos</a></li>
+            <li><a href="#tintes">Tintes</a></li>
+            <li><a href="#cuidados">Cuidados</a></li>
+            <li><a href="#tips">Tips</a></li>
+            <li><a href="#asesoria">Asesoría</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="inicio" class="hero">
+        <div class="hero-text">
+            <h2>Descubre el tono cobrizo que va contigo</h2>
+            <p>
+                Una guía visual para explorar tonos cobrizos, comparar tintes y aprender
+                a cuidar tu color según tu tipo de cabello.
+            </p>
+            <a href="#tonos" class="btn">Explorar tonos</a>
+        </div>
+    </section>
+
+    <section id="tonos" class="section">
+        <h2>Tonos cobrizos</h2>
+        <p>Explora diferentes estilos de cabello cobrizo según la intensidad y el resultado visual que deseas.</p>
+
+        <div class="cards">
+            <article class="card">
+                <h3>Cobrizo claro</h3>
+                <p>Tono suave, luminoso y delicado. Ideal para quienes desean un cambio visible pero natural.</p>
+            </article>
+
+            <article class="card">
+                <h3>Cobrizo dorado</h3>
+                <p>Combina reflejos cálidos entre cobre y dorado. Aporta brillo, naturalidad y elegancia.</p>
+            </article>
+
+            <article class="card">
+                <h3>Cobrizo intenso</h3>
+                <p>Es un tono vibrante y llamativo. Requiere mayor mantenimiento para conservar su fuerza visual.</p>
+            </article>
+
+            <article class="card">
+                <h3>Cobrizo oscuro</h3>
+                <p>Mezcla matices marrones con reflejos cobrizos. Es una opción elegante y más discreta.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="tintes" class="section secondary">
+        <h2>Marcas de tintes</h2>
+        <p>Comparación general de marcas comerciales con tonos relacionados con el cabello cobrizo.</p>
+
+        <div class="cards">
+            <article class="card">
+                <h3>L’Oreal Paris</h3>
+                <p>Recomendada para tonos cobrizos visibles, luminosos y con acabado sofisticado.</p>
+            </article>
+
+            <article class="card">
+                <h3>Garnier</h3>
+                <p>Opción práctica para quienes buscan tonos cálidos, naturales y fáciles de mantener.</p>
+            </article>
+
+            <article class="card">
+                <h3>Schwarzkopf</h3>
+                <p>Alternativa para colores cobrizos más intensos, definidos y de mayor duración.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="cuidados" class="section">
+        <h2>Cuidados del cabello cobrizo</h2>
+
+        <ul class="list">
+            <li>Usar shampoo especial para cabello teñido.</li>
+            <li>Aplicar mascarilla hidratante una o dos veces por semana.</li>
+            <li>Evitar herramientas de calor sin protector térmico.</li>
+            <li>Proteger el cabello del sol para conservar el color.</li>
+            <li>Evitar lavados diarios para que el tono dure más tiempo.</li>
+        </ul>
+    </section>
+
+    <section id="tips" class="section secondary">
+        <h2>Tips según tipo de cabello</h2>
+
+        <div class="cards">
+            <article class="card">
+                <h3>Cabello liso</h3>
+                <p>Usar productos que aporten brillo sin generar exceso de grasa.</p>
+            </article>
+
+            <article class="card">
+                <h3>Cabello ondulado</h3>
+                <p>Aplicar crema para peinar o productos de definición que no resequen el cabello.</p>
+            </article>
+
+            <article class="card">
+                <h3>Cabello rizado</h3>
+                <p>Priorizar mascarillas nutritivas y productos que mantengan la definición del rizo.</p>
+            </article>
+
+            <article class="card">
+                <h3>Cabello decolorado</h3>
+                <p>Fortalecer el cabello con tratamientos reparadores antes y después de aplicar el tinte.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="asesoria" class="section form-section">
+        <h2>Asesoría</h2>
+        <p>Completa el formulario y recibe una recomendación de tono cobrizo.</p>
+
+        <form id="formulario">
+            <label for="nombre"></label><input type="text" id="nombre" placeholder="Tu nombre" required>
+
+            <label for="tipoCabello"></label><select id="tipoCabello" required>
+                <option value="">Selecciona tu tipo de cabello</option>
+                <option value="liso">Liso</option>
+                <option value="ondulado">Ondulado</option>
+                <option value="rizado">Rizado</option>
+                <option value="decolorado">Decolorado</option>
+            </select>
+
+            <label for="intensidad"></label><select id="intensidad" required>
+                <option value="">Nivel de intensidad deseado</option>
+                <option value="suave">Suave</option>
+                <option value="medio">Medio</option>
+                <option value="intenso">Intenso</option>
+            </select>
+
+            <button type="submit" class="btn">Recibir recomendación</button>
+        </form>
+
+        <p id="resultado" class="resultado"></p>
+    </section>
+</main>
+
+<footer>
+    <p>Cobre & Aura - Proyecto académico de Diseño de Aplicaciones Web</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
